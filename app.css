@@ -30,6 +30,10 @@ header{
     align-items: flex-start;
 }
 
+.right-align{
+    justify-content: center;
+    align-items: flex-start;
+}
 .text-align-center{
     text-align: center;
 }
@@ -68,18 +72,19 @@ li{
     color: #C25252;
 }
 
-.background{
-    background-color: #F9F9F9;
+.text-accent-blue{
+    color: #004D94;
 }
 
 /* CONTAINER */
 
 .sidebar-container{
+    background-color: #F9F9F9;
     padding: 3%;
 }
 .pet-bubble{
     border-radius: 20px;
-    background: white;
+    background-color: white;
     width: 350px;
     margin-left: 15%;
     padding: 10px;
@@ -89,6 +94,7 @@ li{
 }
 
 .pet-bubble:hover{
+    background-color: #F5EDA1;
     transform: scale(1.05);
     transition: all 0.2s ease-in-out;
 }
@@ -100,4 +106,36 @@ li{
     border-color: white;
     border-style: solid;
     border-width: 5px;
+}
+
+.image-container{
+    width: 200px;
+    height: 175px;
+    border-radius: 20px;
+    border-color: #FFF;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.icon-container{
+    background-color: white;
+    border-radius: 100%;
+    padding: 30%;
+    box-shadow: 1px 2px 10px #c4c4c4;
+    transition: all 0.2s ease-in-out;
+}
+
+.icon-container:hover{
+    background-color: #F5EDA1;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.card{
+    border-radius: 20px;
+    background-color: #F9F9F9;
+    padding: 20%;
+    box-shadow: 1px 2px 10px #c4c4c4;
+
 }
