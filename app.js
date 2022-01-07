@@ -40,9 +40,24 @@ function displayPetCard() {
         petCardImage["src"] = displayablePet.imagePath;
         petCardImage["alt"] = displayablePet.name;
 
-        document.getElementById("pet-name")["innerHTML"] = displayablePet.name + ", ";
-        document.getElementById("pet-age")["innerHTML"] = displayablePet.age;
+        document.getElementById("pet-card-name")["innerHTML"] = displayablePet.name + ", ";
+        document.getElementById("pet-card-age")["innerHTML"] = displayablePet.age;
     }
+}
+
+function reactToPet(like) {
+    console.log("Went here");
+    let currentPetImg = document.getElementById("pet-card-img");
+    let currentPet = petList.filter(pet => pet["name"] === currentPetImg["alt"])[0];
+    
+    if (like) {
+        currentPet.status = petStatus["liked"];
+        // Add to loved pets
+    } else {
+        currentPet.status = petStatus["disliked"];
+    }
+
+    displayPetCard();
 }
 
 displayPetCard();
