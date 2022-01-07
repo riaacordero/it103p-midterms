@@ -21,7 +21,7 @@
 
 <body class="white-bg">
     <main class="row">
-        <div class="sidebar-container column left-align light-gray-bg">
+        <div class="sidebar-container column light-gray-bg">
             <!-- sidebar header -->
             <div class="sidebar-header column left-align">   
                 <div class="sidebar-title row center">
@@ -32,34 +32,12 @@
             </div>
 
             <!-- pets list -->
-            <div class="pet-list column center">
-                <div class="pet-bubble row center">
-                    <img class="circle-container" src="assets/pet-bruno.jpg">
-                    <div class="pet-item-text row">
-                        <h3 class="primary-color">Name,</h3>
-                        <h3 class="pet-age-text primary-color">NN</h3>
-                    </div>
-                </div>
-
-                <div class="pet-bubble row center">
-                    <img class="circle-container" src="assets/pet-droky.jpg">
-                    <div class="pet-item-text row">
-                        <h3 class="primary-color">Name,</h3>
-                        <h3 class="pet-age-text primary-color">NN</h3>
-                    </div>
-                </div>
-
-                <div class="pet-bubble row center">
-                    <img class="circle-container" src="assets/pet-john.jpg">
-                    <div class="pet-item-text row">
-                        <h3 class="primary-color">Name,</h3>
-                        <h3 class="pet-age-text primary-color">NN</h3>
-                    </div>
-                </div>
+            <div class="pet-list column" id="pet-list">
+                <h3 class="primary-color text-align-center" id="pet-list-empty">no loved pets :(</h3>
             </div>
         </div>
 
-        <div class="column right-align" id="primary-container">
+        <div class="primary-container column right-align" id="primary-container">
             <div class="card column center" id="pet-card">
                 <img class="image-container" id="pet-card-img">
                 <div class="pet-item-text row">

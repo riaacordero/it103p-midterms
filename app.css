@@ -102,8 +102,15 @@ main {
     gap: 1em;
 }
 
+.sidebar-empty-text {
+    margin-left: 10%;
+}
+
 .pet-list {
     gap: 10px;
+    height: 55vh;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .pet-bubble {
@@ -111,7 +118,7 @@ main {
     border-radius: 20px;
     background-color: white;
     width: 350px;
-    margin-left: 15%;
+    margin-left: 10%;
     padding: 10px;
     gap: 10px;
     transition: all 0.2s ease-in-out;

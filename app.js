@@ -56,17 +56,49 @@ function displayPetCard() {
 
 function reactToPet(like) {
     console.log("Went here");
-    let currentPetImg = document.getElementById("pet-card-img");
-    let currentPet = petList.filter(pet => pet["name"] === currentPetImg["alt"])[0];
+    let currentPetImage = document.getElementById("pet-card-img");
+    let currentPet = petList.filter(pet => pet["name"] === currentPetImage["alt"])[0];
 
     if (like) {
+        let petListEmptyText = document.getElementById("pet-list-empty");
+        if (!!petListEmptyText) {
+            petListEmptyText.remove();
+        }
+
         currentPet.status = petStatus["liked"];
-        // Add to loved pets
+        addToLovedPets(currentPet);
     } else {
         currentPet.status = petStatus["disliked"];
     }
 
     displayPetCard();
+}
+
+function addToLovedPets(currentPet) {
+    let petImage = document.createElement("img");
+    petImage.classList.add("circle-container");
+    petImage["src"] = currentPet["imagePath"];
+
+    let petName = document.createElement("h3");
+    petName.classList.add("primary-color");
+    petName["innerHTML"] = currentPet.name + ", ";
+
+    let petAge = document.createElement("h3");
+    petAge.classList.add("pet-age-text", "primary-color");
+    petAge["innerHTML"] = currentPet.age;
+
+    let petTextRow = document.createElement("div");
+    petTextRow.classList.add("pet-item-text", "row");
+    petTextRow.appendChild(petName);
+    petTextRow.appendChild(petAge);
+
+    let petBubble = document.createElement("div");
+    petBubble.classList.add("pet-bubble", "row", "center");
+    petBubble.appendChild(petImage);
+    petBubble.appendChild(petTextRow);
+
+    let petListDiv = document.getElementById("pet-list");
+    petListDiv.appendChild(petBubble);
 }
 
 displayPetCard();
