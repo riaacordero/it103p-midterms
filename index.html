@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,58 +14,64 @@
     <script src="https://kit.fontawesome.com/df8991c74c.js" crossorigin="anonymous"></script>
     <title>Petsy | Animal Adoption Site</title>
 </head>
-<header class="row center">
-    <h2 class="text-accent-yellow">petsy</h2>
+
+<header class="primary-color-bg row center">
+    <h2 class="secondary-color">petsy</h2>
 </header>
-<body>
-    <main class="row" style="gap: 15%;">
-        <div class="sidebar-container background column left-align">
-            <!-- sidebar title -->
-            <div class="column left-align">
-                <div class="row center" style="gap:1em;">
-                    <i class="fas fa-heart fa-2x text-prime-red"></i>
-                    <h2 class="text-prime-red">loved pets</h2>
+
+<body class="white-bg">
+    <main class="row">
+        <div class="sidebar-container column left-align light-gray-bg">
+            <!-- sidebar header -->
+            <div class="sidebar-header column left-align">   
+                <div class="sidebar-title row center">
+                    <i class="fas fa-heart fa-2x primary-color"></i>
+                    <h2 class="primary-color">loved pets</h2>
                 </div>
-                <p style="margin-left: 10%;margin-top: 0%;">all pets you loved will be listed here for easy access.</p>
+                <p>all pets you loved will be listed here for easy access.</p>
             </div>
-            <!-- PETS LIST -->
-            <div class="column center" style="gap:10px">
-                <div class="pet-bubble row center" style="justify-content:flex-start;">
+
+            <!-- pets list -->
+            <div class="pet-list column center">
+                <div class="pet-bubble row center">
                     <img class="circle-container" src="assets/unsplash-1.png">
-                    <div class="row" style="gap: 10px;">
-                        <h3 class="text-prime-red">Name,</h3>
-                        <h3 class="text-prime-red" style="font-weight: 400;">NN</h3>
+                    <div class="pet-item-text row">
+                        <h3 class="primary-color">Name,</h3>
+                        <h3 class="pet-age-text primary-color">NN</h3>
                     </div>
                 </div>
-                <div class="pet-bubble row center" style="justify-content:flex-start;">
+
+                <div class="pet-bubble row center">
                     <img class="circle-container" src="assets/unsplash-1.png">
-                    <div class="row" style="gap: 10px;">
-                        <h3 class="text-prime-red">Name,</h3>
-                        <h3 class="text-prime-red" style="font-weight: 400;">NN</h3>
+                    <div class="pet-item-text row">
+                        <h3 class="primary-color">Name,</h3>
+                        <h3 class="pet-age-text primary-color">NN</h3>
                     </div>
                 </div>
-                <div class="pet-bubble row center" style="justify-content:flex-start;">
+
+                <div class="pet-bubble row center">
                     <img class="circle-container" src="assets/unsplash-1.png">
-                    <div class="row" style="gap: 10px;">
-                        <h3 class="text-prime-red">Name,</h3>
-                        <h3 class="text-prime-red" style="font-weight: 400;">NN</h3>
+                    <div class="pet-item-text row">
+                        <h3 class="primary-color">Name,</h3>
+                        <h3 class="pet-age-text primary-color">NN</h3>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="main column right-align">
             <div class="card column center">
                 <img class="image-container" src="assets/unsplash-1.png">
-                <div class="row" style="gap:10px">
-                    <h2 class="text-prime-red">Mr. Pickles, </h2>
-                    <h2 class="text-prime-red" style="font-weight: 400;">NN</h2>
+                <div class="pet-item-text row">
+                    <h2 class="primary-color">Mr. Pickles, </h2>
+                    <h2 class="pet-age-text primary-color">NN</h2>
                 </div>
-                <div class="row center" style="gap: 5px;">
+                <div class="pet-action row center">
                     <div class="love icon-container center">
-                        <i class="fas fa-heart fa-2x text-prime-red"></i>
+                        <i class="fas fa-heart fa-2x primary-color"></i>
                     </div>
                     <div class="dislike icon-container center">
-                        <i class="fas fa-thumbs-down fa-2x text-accent-blue"></i>
+                        <i class="fas fa-thumbs-down fa-2x dislike-color"></i>
                     </div>
                 </div>
             </div>
@@ -72,4 +79,5 @@
         </div>
     </main>
 </body>
+
 </html>

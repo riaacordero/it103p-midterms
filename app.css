@@ -1,88 +1,113 @@
-html{
-    background-color: #FFF;
+html, body {
     margin: 0%;
 }
 
-body{
-    margin: 0%;
-}
-
-header{
-    background-color: #C25252;
-}
-.row{
+.row {
     display: flex;
     flex-direction: row;
 }
 
-.column{
+.column {
     display: flex;
     flex-direction: column;
 }
 
-.center{
+.center {
     justify-content: center;
     align-items: center;
 }
 
-.left-align{
+.left-align {
     justify-content: left;
     align-items: flex-start;
 }
 
-.right-align{
+.right-align {
     justify-content: center;
     align-items: flex-start;
 }
-.text-align-center{
+
+.text-align-center {
     text-align: center;
 }
 
-.align-end{
+.align-end {
     align-items: flex-end;
 }
 
 /* TEXTS */
 
-h1,h2,h3{
+h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
 
-p, a{
+p, a {
     font-family: 'Poppins', sans-serif;
 }
 
-li{
+li {
     text-decoration: none;
     list-style: none;
 }
 
+/* BACKGROUND COLORS */
+
+.white-bg {
+    background-color: white;
+}
+
+.light-gray-bg {
+    background-color: #F9F9F9;
+}
+
+.primary-color-bg {
+    background-color: #C25252;
+}
+
 /* COLORS */
 
-.text-white{
+.white {
     color: white;
 }
 
-.text-accent-yellow{
+.secondary-color {
     color: #F5EDA1
 }
 
-.text-prime-red{
+.primary-color {
     color: #C25252;
 }
 
-.text-accent-blue{
+.dislike-color {
     color: #004D94;
 }
 
-/* CONTAINER */
+/* CONTAINERS */
 
-.sidebar-container{
-    background-color: #F9F9F9;
+main {
+    gap: 15%;
+}
+
+.sidebar-container {
     padding: 3%;
 }
-.pet-bubble{
+
+.sidebar-header p {
+    margin-top: 0%;
+    margin-left: 10%;
+}
+
+.sidebar-title {
+    gap: 1em;
+}
+
+.pet-list {
+    gap: 10px;
+}
+
+.pet-bubble {
+    justify-content: flex-start;
     border-radius: 20px;
     background-color: white;
     width: 350px;
@@ -93,13 +118,25 @@ li{
     cursor: pointer;
 }
 
-.pet-bubble:hover{
+.pet-bubble:hover {
     background-color: #F5EDA1;
     transform: scale(1.05);
     transition: all 0.2s ease-in-out;
 }
 
-.circle-container{
+.pet-item-text {
+    gap: 10px;
+}
+
+.pet-age-text {
+    font-weight: 400;
+}
+
+.pet-action {
+    gap: 5px;
+}
+
+.circle-container {
     width: 50px;
     border-radius: 100px;
     background: white;
@@ -108,16 +145,16 @@ li{
     border-width: 5px;
 }
 
-.image-container{
+.image-container {
     width: 200px;
     height: 175px;
     border-radius: 20px;
-    border-color: #FFF;
+    border-color: white;
     border-style: solid;
     border-width: 5px;
 }
 
-.icon-container{
+.icon-container {
     background-color: white;
     border-radius: 100%;
     padding: 30%;
@@ -125,17 +162,16 @@ li{
     transition: all 0.2s ease-in-out;
 }
 
-.icon-container:hover{
+.icon-container:hover {
     background-color: #F5EDA1;
     transform: scale(1.05);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
 }
 
-.card{
+.card {
     border-radius: 20px;
     background-color: #F9F9F9;
     padding: 20%;
     box-shadow: 1px 2px 10px #c4c4c4;
-
 }
