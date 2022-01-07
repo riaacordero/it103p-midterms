@@ -32,6 +32,15 @@ function displayPetCard() {
     
     if (displayablePets.length === 0) {
         // Display "no pets left"
+        let petCard = document.getElementById("pet-card");
+        petCard.remove();
+
+        let emptyText = document.createElement("h2");
+        emptyText["innerHTML"] = "no pets left :(";
+        emptyText["style"]["color"] = "#C25252";
+
+        let primaryContainer = document.getElementById("primary-container");
+        primaryContainer.appendChild(emptyText);
     } else {
         let randomIndex = Math.floor(Math.random() * displayablePets.length);
         let displayablePet = displayablePets[randomIndex];
@@ -49,7 +58,7 @@ function reactToPet(like) {
     console.log("Went here");
     let currentPetImg = document.getElementById("pet-card-img");
     let currentPet = petList.filter(pet => pet["name"] === currentPetImg["alt"])[0];
-    
+
     if (like) {
         currentPet.status = petStatus["liked"];
         // Add to loved pets
